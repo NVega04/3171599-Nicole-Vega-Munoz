@@ -22,7 +22,7 @@ SUPPORTED_LANGUAGES = list(TRANSLATION_SERVICES.keys())
 # TODO1: CREAR LA INSTANCIA DE FASTAPI
 # ============================================
 
-app = FastAPI(title="Servicios de traduccion", description="API de servicios", version="1.0.0")
+app = FastAPI(title="Servicios de traducción", description="API de servicios", version="1.0.0")
 
 
 # ============================================
@@ -33,7 +33,7 @@ app = FastAPI(title="Servicios de traduccion", description="API de servicios", v
 async def root() -> dict[str, str | list[str]]:
     """Información de la API."""
     return {
-        "name": "Servicios de traduccion",
+        "name": "Servicios de traducción",
         "version": "1.0.0",
         "docs": "/docs",
         "languages": ["es", "en", "fr", "de", "it", "pt"]
